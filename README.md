@@ -6,12 +6,12 @@ This is a **learning project** I built to understand:
 - How to deploy contracts on **BNB Smart Chain Testnet**
 - How to connect a **React** frontend to real contracts using **ethers + MetaMask**
 
-No hype, no “free money”, no trading bot.  
+No hype, no trading bot.  
 Just me wiring things together so I properly get the flow end‑to‑end.
 
 ---
 
-## What this project does (in plain words)
+## What this project does-
 
 On BSC **testnet**:
 
@@ -27,7 +27,7 @@ On BSC **testnet**:
   - Withdraw USDT from the contract back to my wallet.
   - See the contract balances update live.
 
-That’s it. No hidden addresses, no obfuscated code, no “flash loan” nonsense, just to give a clarity.
+That’s it. No nonsense!
 
 ---
 
@@ -150,7 +150,7 @@ npm run dev
 
 ---
 
-## Why I built this (and what it says about me)
+## Why I built this
 
 I got tired of copy‑paste “flash loan bot” code that makes zero sense, so I wanted:
 
