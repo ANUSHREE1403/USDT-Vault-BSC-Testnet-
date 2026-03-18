@@ -83,7 +83,7 @@ These are **BNB Smart Chain Testnet** only:
 - `TestUSDT` (tUSDT) token:  
   `0xc8e6590fa17197ca6403ad361050bc542cb9a738`
 
-- `CleanFlashUSDTBsc` helper:  
+- `CleanUSDTBsc` helper:  
   `0x98061f2f28439cc95f57b68d7c05da9456949ff2`
 
 You can plug them into [BscScan Testnet](https://testnet.bscscan.com/) and inspect all the tx history.
