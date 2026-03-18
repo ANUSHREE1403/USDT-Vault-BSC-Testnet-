@@ -105,21 +105,21 @@ On top of that, I wired all the Web3 logic, contract config, and the Flash USDT 
 The interesting part is in:
 
 - `src/config/web3.ts` – chain id, contract addresses, and minimal ABIs.
-- `src/lib/flashUsdt.ts` – sets up `BrowserProvider` from `window.ethereum`, enforces BSC testnet, and returns ethers `Contract` instances.
-- `src/components/FlashUsdtPanel.tsx` – the actual UI panel.
+- `src/lib/Usdt.ts` – sets up `BrowserProvider` from `window.ethereum`, enforces BSC testnet, and returns ethers `Contract` instances.
+- `src/components/UsdtPanel.tsx` – the actual UI panel.
 
-### Flash USDT panel
+### USDT panel
 
 What the panel does:
 
 - **Load balances**  
-  Calls `bnbBalance()` and `usdtBalance()` on `CleanFlashUSDTBsc`.
+  Calls `bnbBalance()` and `usdtBalance()` on `CleanUSDTBsc`.
 - **Approve USDT**  
   Calls `TestUSDT.approve(FLASH_ADDR, maxAmount)` so the helper contract is allowed to pull USDT from my wallet.
 - **Deposit**  
-  Calls `CleanFlashUSDTBsc.depositUSDT(amount)` with the amount from the input.
+  Calls `CleanUSDTBsc.depositUSDT(amount)` with the amount from the input.
 - **Withdraw to me**  
-  Calls `CleanFlashUSDTBsc.withdrawUSDT(amount, myAddress)`.
+  Calls `CleanUSDTBsc.withdrawUSDT(amount, myAddress)`.
 
 Errors are made readable:
 
