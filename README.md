@@ -49,7 +49,7 @@ Key functions I care about:
 - `allowance(address owner, address spender)`
 - `transferFrom(address from, address to, uint256 amount)`
 
-### `CleanFlashUSDTBsc.sol`
+### `CleanUSDTBsc.sol`
 
 Helper contract that talks to the USDT token:
 
